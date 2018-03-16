@@ -8,7 +8,10 @@
 		<body> 
 			<p> UI version number: 3.03.16.2018 </p>
 			<x3d width = "600" height = "600">
-				<scene> 
+				
+
+				<scene>
+					<viewpoint fieldofview = "1.57" position = "0 0 15" orientation = "0 0 0 1"> </viewpoint>
 				<shape>
 					<appearance>
 						<material diffuseColor = "1 0 0"/>
@@ -25,6 +28,15 @@
 					<cone></cone>
 				</shape>
 				</transform>
+
+				<transform translation = "0 13 0">
+					<shape>
+						<appearance>
+							<material diffuseColor = "1 0 0" />
+						</appearance>
+						<cone></cone>
+						<text string ="Y"></text>
+				</shape></transform>
 
 				<transform rotation = "0 0 1 1.57">
 				<shape>
@@ -45,6 +57,15 @@
 				</shape>
 				</transform>
 			</transform>
+
+			<transform translation = "13 0 0">
+					<shape>
+						<appearance>
+							<material diffuseColor = "0 1 0" />
+						</appearance>
+						<cone></cone>
+						<text string ="X"></text>
+				</shape></transform>
 		
 				<transform rotation = "1 0 0 1.57">
 				<shape>
@@ -66,7 +87,16 @@
 				</shape>
 				</transform>
 				</transform>
-				
+
+				<transform translation = "0 0 13">
+					<shape>
+						<appearance>
+							<material diffuseColor = "0 0 1" />
+						</appearance>
+						<cone></cone>
+						<text string ="Z"></text>
+				</shape></transform>
+
 				</scene>
 
 			</x3d>
