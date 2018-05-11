@@ -1,32 +1,24 @@
-<!DOCTYPE html>
-
+<!doctype html>
 <html>
-	<head>
-		<script type='text/javascript' src='https://www.x3dom.org/download/x3dom.js'> </script> 
-        <link rel='stylesheet' type='text/css' href='https://www.x3dom.org/download/x3dom.css'></link>
-	</head>
-		<body> 
-			<p> UI version number: 6.03.09.2018 </p>
-			<x3d width = "600" height = "600">
-				<Shape DEF='wall'>
-<ElevationGrid solid='false' xDimension='9' xSpacing='10' zDimension='9' zSpacing='10' height='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0'/> 
-
-</Shape> 
-<!-- left wall --> 
-<Transform rotation='0 0 1 1.57'>
-<Shape USE='wall'/>
-</Transform> 
-<!-- right wall --> 
-<Transform rotation='0 0 1 1.57' translation='80 0 0'>
-<Shape USE='wall'/>
-</Transform> 
-<!-- top --> 
-<Transform translation='0 80 0'>
-<Shape USE='wall'/>
-</Transform> 
-<!-- front wall --> 
-<Transform rotation='1 0 0 1.57'>
-<Shape> 
-			</x3d>
-		</body>
+<head>
+  <meta encoding="utf-8">
+  <script type='text/javascript' src="http://www.x3dom.org/download/dev/x3dom.js"></script>
+  <link rel="stylesheet" href="http://www.x3dom.org/download/dev/x3dom.css">
+</head>
+<body>
+  <x3d>
+  	<Transform DEF='Floor'>
+<Shape>
+<Appearance DEF='WoodFloor'>
+<ImageTexture 
+  url=' "PrintShopFloorWood.jpg" "http://www.web3d.org/x3d/content/examples/Basic/StudentProjects/PrintShopFloorWood.jpg" '/>
+</Appearance> 
+<IndexedFaceSet solid='false' coordIndex='0 1 2 3' texCoordIndex='0 1 2 3'>
+<Coordinate point='-2 0 -1.5 2 0 -1.5 2 0 1.5 -2 0 1.5'/> 
+<TextureCoordinate point='0 0 1 0 1 1 0 1'/>
+</IndexedFaceSet>
+</Shape>
+</Transform>
+	</x3d>
+</body>
 </html>
