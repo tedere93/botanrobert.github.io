@@ -1,0 +1,12 @@
+<x3d>
+	<Shape>
+<Appearance DEF='desk_color'>
+<Material DEF='color'>
+<IS>
+<connect nodeField='diffuseColor' protoField='diffuseColor'/>
+</IS>
+</Material>
+</Appearance> 
+<Box size='20 1 13'/>
+</Shape> 
+</x3d>
